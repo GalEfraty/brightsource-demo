@@ -1,0 +1,131 @@
+@import '../../index.scss';
+
+.resourceWrapper {
+  flex-grow: 1;
+  background-color: #f1f1f1;
+  padding: 40px 60px;
+
+  @media (max-width: $mdScreenSize) {
+    padding: 20px 10px;
+  }
+
+  .resourceContainer {
+    background-color: #fff;
+    border: 1px solid #dcdbdb;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .11);
+    width: 85%;
+    margin-right: auto;
+
+    @media (max-width: $mdScreenSize) {
+      width: 95%;
+      margin-left: auto;
+    }
+
+    .resourceHeader {
+      padding: 20px;
+      height: 70px;
+      background-color: #00d1b2;
+
+      @media (max-width: $mdScreenSize) {
+        height: 50px;
+        padding: 10px 20px;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    .resourceBody {
+      padding: 25px;
+      display: flex;
+      flex-direction: row;
+      max-height: calc(100vh - 250px);
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+
+        &-track {
+          background: #f1f1f1;
+        }
+
+        &-thumb {
+          background: #b7b5b5;
+        }
+      }
+
+      @media (max-width: $mdScreenSize) {
+        flex-direction: column;
+      }
+
+      > div {
+        width: 50%;
+        padding-right: 15px;
+
+        @media (max-width: $mdScreenSize) {
+          width: 100%;
+          padding-right: 0;
+        }
+
+        header {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+
+          h3 {
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #4f97ff;
+            margin-bottom: 0;
+            margin-right: 5px;
+          }
+
+          svg {
+            height: 25px;
+            width: 25px;
+            color: #5f5a5a;
+          }
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        &.reaourceActions {
+          @media (max-width: $mdScreenSize) {
+            padding-top: 20px;
+            border-top: 1px solid #f1f1f1;
+            margin-top: 15px;
+          }
+
+          ul {
+            padding-top: 30px;
+
+            @media (max-width: $mdScreenSize) {
+              padding-top: 0;
+            }
+
+            li {
+              background-color: #f1f1f1;
+              line-height: 20px;
+              padding: 5px 8px;
+              border-radius: 2px;
+              color: #5f5a5a;
+              font-size: 16px;
+              margin-bottom: 10px;
+              min-height: 40px;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

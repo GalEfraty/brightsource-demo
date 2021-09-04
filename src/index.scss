@@ -1,0 +1,20 @@
+//style vars
+$headerHeight: 80px;
+
+//fonts:
+$primaryFont: 'Roboto', sans-serif;
+
+//screen sizes: 
+$smScreenSize: 768px;
+$mdScreenSize: 992px;
+$lgScreenSize: 1200px;
+
+
+//general
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $primaryFont;
+  box-sizing: border-box;
+}
+

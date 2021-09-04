@@ -1,0 +1,30 @@
+@import '../../index.scss';
+
+.header {
+  background-color: #535858;
+  height: $headerHeight;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+
+  h1 {
+    color: #b7b5b5;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    color: #5f5a5a;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
